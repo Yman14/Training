@@ -9,6 +9,16 @@
     <hi class="demo">JavaScript Training</hi>
     <p>Open console to see result. Press Ctrl + shift + i</p>
     <p id="demo">JavaScript Training</p>
+    <button 
+        style="width: 80px; 
+        height:30px; 
+        background: greenyellow;
+        border-radius: 10px;
+        color:red;
+        font-size: 11px;
+        font-weight: 900;">
+        Count
+    </button>
 
     <script>
         function add7(n)
@@ -28,13 +38,28 @@
             return string[string.length-1];
         }
 
+        function countingNumber(num = 0) {
+            console.log(`You pressed "${num+1}".`);
+        }
+
         console.log(add7(10));
         console.log(multiply(3, 2));
         console.log(capitalize("abcd"));
         console.log(capitalize("ABCD"));
         console.log(capitalize("aBcD"));
         console.log(lastLetter("abcd"));
-        console.log(Math.floor(Math.random() * 10));
+        console.log(`Random Number: ${Math.floor(Math.random() * 10)}`);
+
+        //anonymous function
+        const btn = document.querySelector('button');
+        /*btn.addEventListener('click',function() {
+            countingNumber(12);
+        });*/
+
+        btn.addEventListener('click', () => {
+            countingNumber(19);
+        });
+
 
         //no error in console
         document.getElementById("demo").innerHTML = "All is well.";
