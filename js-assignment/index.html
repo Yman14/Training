@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Javascript Training</title>
+</head>
+<body>
+    <hi class="demo">JavaScript Training</hi>
+    <p>Open console to see result. Press Ctrl + shift + i</p>
+    <p id="demo">JavaScript Training</p>
+
+    <script>
+        function add7(n)
+        {
+            return n + 7;
+        }
+
+        function multiply(a, b){
+            return a*b;
+        }
+
+        function capitalize(string){
+            return string[0].toUpperCase() + string.slice(1).toLowerCase();
+        }
+
+        function lastLetter(string){
+            return string[string.length-1];
+        }
+
+        console.log(add7(10));
+        console.log(multiply(3, 2));
+        console.log(capitalize("abcd"));
+        console.log(capitalize("ABCD"));
+        console.log(capitalize("aBcD"));
+        console.log(lastLetter("abcd"));
+        document.getElementById("demo").innerHTML = "All is well.";
+    </script>
+</body>
+</html>
