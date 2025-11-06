@@ -9,6 +9,13 @@
     // camelize("background-color") == 'backgroundColor';
     // camelize("list-style-image") == 'listStyleImage';
     // camelize("-webkit-transition") == 'WebkitTransition';
+    return str
+      .split("-")
+      .map((array, index) => {
+        if(index == 0) return array;
+        return array.charAt(0).toUpperCase() + array.slice(1);
+      })
+      .join("");
     
   }
 
