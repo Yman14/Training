@@ -1,4 +1,13 @@
 <!doctype html>
+<head>
+  <style>
+    html{
+      color: white;
+      background-color: #0a0a24;
+    }
+
+  </style>
+</head>
 <script src="https://en.js.cx/test/libs.js"></script>
 <script src="test.js"></script>
 <script>
@@ -45,7 +54,7 @@
     //let arr = [5, 2, 1, -10, 8];
     // alert( arr ); // 8, 5, 2, 1, -10
     function sortDecreaseOrder(arr){
-      for(let i = 0; i < arr.length; i++){
+      /*for(let i = 0; i < arr.length; i++){
         for(let j = i+1; j < arr.length; j++){
           if(arr[i] < arr[j]) 
           {
@@ -55,7 +64,8 @@
             break;
           }
         }
-      }
+      }*/
+     arr.sort((a,b) => b-a);
     }
     let arr = [5, 2, 1, -10, 8];
     sortDecreaseOrder(arr);
