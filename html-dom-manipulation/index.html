@@ -17,6 +17,48 @@
         content.textContent = "This is the glorious text-content!";
 
         container.appendChild(content);
+
+        const title = document.createElement("h1");
+        title.classList.add("title-header");
+        title.innerText = "Placeholder for Title";
+
+        const description = document.createElement("p");
+        description.classList.add("desc");
+        description.textContent = "description";
+
+        container.appendChild(title);
+        container.appendChild(description);
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+        const red = document.createElement("p");
+        red.textContent = "Hey I'm red";
+        container.appendChild(red);
+
+        const blue = document.createElement("h3");
+        blue.textContent = "Im a blue h3";
+        container.appendChild(blue);
+
+        const coolDiv = document.createElement("div");
+        coolDiv.classList.add("cool-div");
+        container.appendChild(coolDiv);
+
+        const h1 = document.createElement("h1");
+        h1.textContent = "Im in a div";
+        coolDiv.appendChild(h1);gi
     </script>
 </body>
 </html>
