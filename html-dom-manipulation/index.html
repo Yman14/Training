@@ -58,7 +58,15 @@
 
         const h1 = document.createElement("h1");
         h1.textContent = "Im in a div";
-        coolDiv.appendChild(h1);gi
+        coolDiv.appendChild(h1);
+
+        const p = document.createElement("p");
+        p.classList.add("cool-p");
+        p.textContent = "ME TOO!";
+        coolDiv.appendChild(p);
+
+        //setting attribute for element
+        coolDiv.setAttribute("style", "border: 2px solid black; background-color: pink;");
     </script>
 </body>
 </html>
