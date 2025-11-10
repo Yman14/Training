@@ -7,5 +7,20 @@
 </head>
 <body>
     <h1>DOM Events</h1>
+
+    <!--Method 1-->
+    <button onclick="alert('Hello World')">Click me</button>
+
+    <!--Method 2-->
+    <button id="btn">Click Me</button>
+
+    <button id="btn2">Click Me Too</button>
+    <script>
+        const btn = document.querySelector("#btn");
+        btn.onclick = () => alert("Method 2");
+
+        const btn2 = document.querySelector("#btn2");
+        btn2.addEventListener("click", () => alert("method 3")); 
+    </script>
 </body>
 </html>
