@@ -1,6 +1,9 @@
 .container {
-  display: inline-grid;
-  grid-template: 40px 40px 40px 40px 40px / 40px 40px 40px 40px 40px;
+  margin: 0 25%;
+  width: 50%;
+  height: 50vh;
+  display: grid;
+  grid-template: repeat(5, 1fr) / repeat(5, 1fr);
   background-color: lightblue; 
   grid-template-areas:
     "living-room living-room living-room living-room living-room"
